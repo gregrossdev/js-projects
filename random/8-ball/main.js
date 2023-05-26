@@ -1,10 +1,10 @@
+// ** Orignal Project **
+// https://github.com/skillcrush/102-magic_8_ball
+
 const magic8Ball = {};
 magic8Ball.listOfAnswers = ["No", "Yes", "I don't think so...", "Of course!", "Indubitably", "In your dreams."];
-
 const ball = document.getElementById('8ball'); 
 const questionButton = document.getElementById('questionButton'); 
-
-
 
 const onReady = (callback) =>{
   if (document.readyState!='loading') callback();
