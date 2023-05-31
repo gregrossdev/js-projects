@@ -1,5 +1,3 @@
-
-
 let accountValues = {  
   score: 0,
   lines: 0,
