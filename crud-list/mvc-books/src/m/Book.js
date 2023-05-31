@@ -5,7 +5,6 @@
  * @license This code is licensed under The Code Project Open License (CPOL), implying that the code is provided "as-is", 
  * can be modified to create derivative works, can be redistributed, and can be used in commercial applications.
  */
-
 /**
  * Constructor function for the class Book 
  * @constructor
@@ -16,7 +15,6 @@ function Book( slots) {
   this.title = slots.title;
   this.year = slots.year;
 };
-
 /***********************************************
  ***  Class-level ("static") properties  *******
  ***********************************************/
@@ -87,8 +85,6 @@ Book.destroy = function (isbn) {
     console.log("There is no book with ISBN " + isbn + " in the database!");
   }
 };
-
-
 /*******************************************
 *** Auxiliary methods for testing **********
 ********************************************/
