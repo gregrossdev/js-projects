@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Minimal JavaScript Front-End App</title>
+    <script src="src/c/initialize.js"></script>
+    <script src="src/m/Movie.js"></script>
+</head>
+<body>
+<h2>Challenge 1: Develop a Minimal JavaScript Front-End App</h2>
+<h3>&nbsp&nbsp&nbsp&nbsp Managing information about movies</h3>
+
+<menu>
+    <li><a href="createMovie.html"><button type="button">Create</button></a> a new movie record</li>
+    <li><a href="retrieveAndListAllMovies.html"><button type="button">Retrieve</button></a> and list all movie records</li>
+    <li><a href="updateMovie.html"><button type="button">Update</button></a> a movie record</li>
+    <li><a href="deleteMovie.html"><button type="button">Delete</button></a> a movie record</li>
+    <hr/>
+    <li><button type="button" onclick="Movie.clearData()">Clear</button> database</li>
+    <li><button type="button" onclick="Movie.generateTestData()">Generate</button> test data</li>
+</menu>
+</body>
