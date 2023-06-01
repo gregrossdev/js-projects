@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Plain JS Validation App</title>
+    <meta name="description" content="A plain JS app with constraint validation."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#ffffff"/>
+
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="module">
+        import Movie from "./src/m/Movie.mjs";
+
+        const clearButton = document.getElementById("clearData"),
+            generateTestDataButtons = document.querySelectorAll("button.generateTestData");
+        // Set event handlers for the buttons "clearData" and "generateTestData"
+        clearButton.addEventListener("click", function () {
+            Movie.clearData();
+        });
+        generateTestDataButtons.forEach(function (el) {
+            el.addEventListener("click", function () {
+                Movie.generateTestData();
+            })
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="wrapper clearfix">
+        <div class="title">
+            <h1>Movie Data</h1>
+            <h2>A plain JavaScript front-end web app with constraint validation</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="createMovie.html">C</a></li>
+                <li><a href="retrieveAndListAllMovies.html">R</a></li>
+                <li><a href="updateMovie.html">U</a></li>
+                <li><a href="deleteMovie.html">D</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="wrapper clearfix">
+        <div class="two-col-menu">
+            <menu class="crud">
+                <li><a href="createMovie.html"><b>C</b>reate</a> a new movie record</li>
+                <li><a href="retrieveAndListAllMovies.html"><b>R</b>etrieve</a> and list all movie records</li>
+                <li><a href="updateMovie.html"><b>U</b>pdate</a> a movie record</li>
+                <li><a href="deleteMovie.html"><b>D</b>elete</a> a movie record</li>
+            </menu>
+            <menu>
+                <li>
+                    <button type="button" class="generateTestData">Generate test data</button>
+                </li>
+                <li>
+                    <button type="button" id="clearData">Clear database</button>
+                </li>
+            </menu>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="foot-content wrapper">
+        Copyright © 2022 [your name]
+    </div>
+</footer>
+</body>
+</html>
